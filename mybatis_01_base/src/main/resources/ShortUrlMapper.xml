@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ky2009666.mapper.ShortUrlMapper">
+    <select id="selectShortUrl" resultType="com.ky2009666.domain.ShortUrl">
+    select * from short_url where id = #{id}
+  </select>
+</mapper>
